@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.del {
+    background:#ff0000;
+    color: none;
+    border: none;
+    padding: 5px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+}
+
+.edit {
+    background:#2ac70d;
+    color: none;
+    border: none;
+    padding: 5px 9px;
+    border-radius: 30%;
+    cursor: pointer;
+    float: right;
+    margin-right: 5px;
+}
+
+.pInline {
+    display: inline;
+}
+
+.divcontact {
+    background: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px #ccc dotted;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+.addDiv {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.add {
+    background:#cc6363;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    padding: 5px 9px;
+    cursor: pointer;
+    display: inline;
+}

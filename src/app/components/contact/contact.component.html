@@ -1,0 +1,6 @@
+<app-contact-item 
+    *ngFor='let contact of contacts'
+    [contact]='contact'
+    (deleteContact)='deleteContact($event)'
+>
+</app-contact-item>

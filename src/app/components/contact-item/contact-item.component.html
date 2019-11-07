@@ -1,0 +1,11 @@
+<div class='addDiv'>
+        <button class='add' (click)='onAdd()'>Add New Contact</button>
+</div>
+<div *ngFor='let c of contact'>
+    <div class='divcontact'>
+        <h2 (click)='onToggle(c)'>{{ c.first_name }} {{ c.last_name }}</h2>
+        <p class='pInline'>{{ c.email }}</p>
+        <button class='del' (click)='onDelete(c)'>x</button>
+        <button class='edit' (click)='onEdit(c)'>Edit</button>
+    </div>
+</div>
