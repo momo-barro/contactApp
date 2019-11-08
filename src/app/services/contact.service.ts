@@ -20,6 +20,9 @@ export class ContactService {
   // endpoint to get a single contact
   getSingleContactEndpoint:string ='http://localhost:8000/api/contact'
 
+  // Add contact endpoint
+  addContactEndpoint:string ='http://localhost:8000/api/contact'
+
   constructor(private http:HttpClient) { }
 
   //Get Contacts
@@ -33,5 +36,9 @@ export class ContactService {
 
   deleteContact(contact_id):Observable<Contact[]>{
     return this.http.delete<Contact[]>(this.getSingleContactEndpoint+"/"+contact_id, httpOptions)
+  }
+
+  addContact(contact:Contact):Observable<Contact> {
+    return this.http.post<Contact>(this.addContactEndpoint, contact, httpOptions)
   }
 }
