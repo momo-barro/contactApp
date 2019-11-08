@@ -16,6 +16,7 @@ export class ContactComponent implements OnInit {
       const dataArray = Object.keys(data).map(i => data[i]) //convert data of type Object to an Array
       this.contacts = dataArray
       console.log(this.contacts)
+      console.log('redirected')
     })
   }
 
