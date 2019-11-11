@@ -26,12 +26,8 @@ export class ContactComponent implements OnInit {
     this.contactService.deleteContact(contact.id).subscribe(
       data => {
         this.ngOnInit()
-      // const dataArray = Object.keys(data).map(i => data[i])
-      // const singleDataArray = Object.keys(dataArray[0]).map(i => dataArray[0][i])
-      // this.contacts = singleDataArray
-      // console.log(this.contacts)
-      //this.contacts = this.contacts.filter(c => c.id !== contact.id)
-      console.log(data)
+      
+        console.log(data)
     })
   }
 
