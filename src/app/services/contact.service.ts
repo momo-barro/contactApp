@@ -41,4 +41,8 @@ export class ContactService {
   addContact(contact:Contact):Observable<Contact> {
     return this.http.post<Contact>(this.addContactEndpoint, contact, httpOptions)
   }
+
+  updateContact(contact:Contact):Observable<Contact> {
+    return this.http.put<Contact>(this.addContactEndpoint, contact, httpOptions)
+  }
 }
