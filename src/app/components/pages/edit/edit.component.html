@@ -1,1 +1,54 @@
-<p>edit works!</p>
+<h1>Update The Current Contact</h1>
+<form class="form" (ngSubmit)="onSubmit()">
+    <div>
+        <div class="container input-label">
+            <label>First Name: <span>*</span></label>
+        </div>
+        <div class="container input-field">
+            <input type="text" name="first_name" [(ngModel)]="first_name" value="{{ first_name }}">
+        </div>
+    </div>
+    <div>
+        <div class="container input-label">
+            <label>Last Name: <span>*</span></label>
+        </div>
+        <div class="container input-field">
+            <input type="text" name="last_name" [(ngModel)]="last_name" value="{{ last_name }}">
+        </div>
+    </div>
+    <div>
+        <div class="container input-label">
+            <label>Email: <span>*</span></label>
+        </div>
+        <div class="container input-field">
+            <input type="text" name="email" [(ngModel)]="email" value="{{ email }}">
+        </div>
+    </div>
+    <div>
+        <div class="container input-label">
+            <label>Job Title: <span>*</span></label>
+        </div>
+        <div class="container input-field">
+            <input type="text" name="job_title" [(ngModel)]="job_title" value="{{ job_title }}">
+        </div>
+    </div>
+    <div>
+        <div class="container input-label">
+            <label>City: <span>*</span></label>
+        </div>
+        <div class="container input-field">
+            <input type="text" name="city" [(ngModel)]="city" value="City">
+        </div>
+    </div>
+    <div>
+        <div class="container input-label">
+            <label>Country: <span>*</span></label>
+        </div>
+        <div class="container input-field">
+            <input type="text" name="country" [(ngModel)]="country" value="Country">
+        </div>
+    </div>
+    <div class="container submit">
+        <input type="submit" value="Update" class="btn">
+    </div>
+</form>
